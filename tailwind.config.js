@@ -3,6 +3,30 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      container: {
+        center: true, // Memusatkan kontainer
+        padding: "1rem", // Menambahkan padding horizontal
+        screens: {
+          sm: "600px",
+          md: "768px",
+          lg: "1200px", // Menetapkan lebar maksimum pada breakpoint lg
+          xl: "1280px",
+          "2xl": "1536px",
+        },
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+      gridTemplateColumns: {
+        1: "repeat(1, minmax(0, 1fr))", // grid-cols-1
+        2: "repeat(2, minmax(0, 1fr))", // grid-cols-2
+        3: "repeat(3, minmax(0, 1fr))", // grid-cols-3
+        4: "repeat(4, minmax(0, 1fr))", // grid-cols-4
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
@@ -10,6 +34,7 @@ module.exports = {
         10: "2.5rem",
         20: "5rem", // Menambahkan 'mx-40' sebagai 10rem
         40: "10rem",
+        30: "7.5rem",
       },
       borderWidth: {
         2: "2px",
@@ -25,6 +50,10 @@ module.exports = {
         "2/5": "40%", // Tambahkan ukuran baru (contoh)
         "3/5": "60%", // Tambahan lainnya
         "1/5": "20%",
+        "50rem": "50rem",
+      },
+      height: {
+        "25rem": "25rem",
       },
       colors: {
         "custom-cream": "#fffdf3",
