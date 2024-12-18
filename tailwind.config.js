@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      blur: {
+        sm: "2px", // Nilai blur kecil (sm)
+        custom: "10px", // Contoh blur tambahan
+      },
       container: {
         center: true, // Memusatkan kontainer
         padding: "1rem", // Menambahkan padding horizontal
@@ -59,6 +63,7 @@ module.exports = {
         "custom-cream": "#fffdf3",
         customGreen: "#e8fde1", // Nama warna bisa disesuaikan
         "yellow-300": "#FCD34D",
+        "custom-green": "#3ECF4C",
       },
     },
   },

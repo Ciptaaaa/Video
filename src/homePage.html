@@ -33,16 +33,62 @@
     </header>
 
     <!-- Main Content -->
-    <section class="flex relative justify-center p-6">
-      <!-- Gambar -->
-      <figure class="w-full h-full">
+    <div class="2xl:mx-3 mx-4 py-16">
+      <div class="w-full relative flex items-center justify-center">
+        <!-- Gambar latar belakang untuk layar besar -->
         <img
-          src="./assets/card_home.svg"
-          alt="Gambar Polos"
-          class="rounded-lg shadow-lg w-full h-full"
+          src="./assets/kelas3.png"
+          alt="dining"
+          class="w-full h-full absolute z-0 object-cover hidden xl:block max-w-[1200px] blur-sm"
         />
-      </figure>
-    </section>
+        <!-- Gambar latar belakang untuk layar menengah -->
+        <img
+          src="./assets/kelas3.png"
+          alt="dining"
+          class="w-full h-full absolute z-0 object-cover hidden sm:block xl:hidden mr-4 ml-4 blur-sm"
+        />
+        <!-- Gambar latar belakang untuk layar kecil -->
+        <img
+          src="./assets/kelas3.png"
+          alt="dining"
+          class="w-full h-full absolute z-0 object-cover sm:hidden blur-sm"
+        />
+        <div
+          class="bg-transparent bg-opacity-80 md:my-14 lg:py-14 py-10 w-full md:mx-20 md:px-10 px-4 flex flex-col items-center justify-center relative z-40 mr-4 tracking-tighter"
+        >
+          <h1
+            class="text-5xl font-bold leading-9 font-poppins text-white text-center my-2"
+          >
+            Revolusi Pembelajaran: Temukan
+          </h1>
+          <h1
+            class="text-5xl font-bold leading-9 font-poppins text-white text-center my-2"
+          >
+            Ilmu baru melalui platform video
+          </h1>
+          <h1
+            class="text-5xl font-bold leading-9 font-poppins text-white text-center my-2"
+          >
+            interaktif!
+          </h1>
+          <p class="text-base leading-normal text-center text-white mt-6">
+            Temukan ilmu baru yang menarik dan mendalam melalui koleksi video
+            pembelajaran berkualitas tinggi. <br />
+            Tidak hanya itu, Anda juga dapat berpartisipasi dalam latihan
+            interaktif yang akan meningkatkan pemahaman Anda.
+          </p>
+          <div
+            class="sm:border border-transparent flex items-center lg:w-5/12 w-full mt-12 rounded-lg"
+          >
+            <button
+              class="focus:outline-none focus:ring-offset-2 focus:ring border border-transparent w-full bg-custom-green text-white py-4 px-6 hover:bg-opacity-75 rounded-lg"
+            >
+              Temukan Video Course untuk Dipelajari!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="pl-3">
       <section id="home" class="p-6">
@@ -448,13 +494,13 @@
       </div>
     </div>
     <!-- NEWSLETTER -->
-    <div class="2xl:mx-3 mx-4 py-16 max-w-[1200px]">
+    <div class="2xl:mx-3 mx-4 py-16">
       <div class="w-full relative flex items-center justify-center">
         <!-- Gambar latar belakang untuk layar besar -->
         <img
           src="./assets/kelas2.png"
           alt="dining"
-          class="w-full h-full absolute z-0 object-cover hidden xl:block"
+          class="w-full h-full absolute z-0 object-cover hidden xl:block max-w-[1200px]"
         />
         <!-- Gambar latar belakang untuk layar menengah -->
         <img
@@ -496,24 +542,23 @@
     </div>
 
     <footer class="bg-white text-black py-8 mt-10">
-      <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
-      >
-        <div class="mb-4 md:mb-0 pl-4 tracking-tighter">
-          <img src="./assets/navbar_logo.svg" alt="" class="ml-8" />
-          <p class="text-gray-600 ml-12 font-bold">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <!-- Informasi Perusahaan -->
+        <div class="tracking-tighter">
+          <img src="./assets/navbar_logo.svg" alt="Logo" class="mb-4" />
+          <p class="text-gray-600 font-semibold">
             Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!
           </p>
-          <p class="text-gray-600 ml-12">
+          <p class="text-gray-600 mt-2">
             Jl. Usman Effendi No. 50 Lowokwaru, Malang
           </p>
-          <p class="text-gray-600 ml-12">+62-877-7123-1234</p>
+          <p class="text-gray-600 mt-1">+62-877-7123-1234</p>
         </div>
 
         <!-- Kategori -->
-        <div class="mb-4 md:mb-0">
-          <h2 class="font-bold text-xl md:block cursor-pointer">Kategori</h2>
-          <ul class="list-none p-0 md:block hidden">
+        <div>
+          <h2 class="font-bold text-xl mb-4">Kategori</h2>
+          <ul class="list-none space-y-2">
             <li>
               <a href="#" class="text-gray-600 hover:text-gray-800"
                 >Digital dan Teknologi</a
@@ -541,9 +586,9 @@
         </div>
 
         <!-- Perusahaan -->
-        <div class="mb-4 md:mb-0">
-          <h2 class="font-bold text-xl md:block cursor-pointer">Perusahaan</h2>
-          <ul class="list-none p-0 md:block hidden">
+        <div>
+          <h2 class="font-bold text-xl mb-4">Perusahaan</h2>
+          <ul class="list-none space-y-2">
             <li>
               <a href="#" class="text-gray-600 hover:text-gray-800"
                 >Tentang kami</a
@@ -569,9 +614,9 @@
         </div>
 
         <!-- Komunitas -->
-        <div class="mb-4 md:mb-0">
-          <h2 class="font-bold text-xl md:block cursor-pointer">Komunitas</h2>
-          <ul class="list-none p-0 md:block hidden">
+        <div>
+          <h2 class="font-bold text-xl mb-4">Komunitas</h2>
+          <ul class="list-none space-y-2">
             <li>
               <a href="#" class="text-gray-600 hover:text-gray-800"
                 >Tips Sukses</a
@@ -594,10 +639,13 @@
         </div>
       </div>
 
-      &nbsp; &nbsp;
-      <div class="flex justify-between items-center ml-12 mt-12">
-        <p class="text-gray-600">@2023 Gerobak Sayur All Rights Reserved</p>
-        <div class="flex items-center gap-1 mr-2">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center mt-8 px-4"
+      >
+        <p class="text-gray-600 text-center md:text-left">
+          © 2023 Gerobak Sayur All Rights Reserved
+        </p>
+        <div class="flex items-center gap-4 mt-4 md:mt-0">
           <a
             href="https://www.linkedin.com"
             target="_blank"
